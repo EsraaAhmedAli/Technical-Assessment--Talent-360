@@ -1,0 +1,200 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type AddressDetails {
+  apartment: String!
+  building: String!
+  city: String!
+  country: String!
+  floorNo: String!
+  postalCode: String!
+  street: String!
+}
+
+input AddressDetailsInput {
+  apartment: String
+  building: String
+  city: String
+  country: String
+  floorNo: String
+  postalCode: String
+  street: String
+}
+
+type BankInformation {
+  bankName: String!
+  iban: String!
+}
+
+input BankInformationInput {
+  bankName: String
+  iban: String
+}
+
+type BasicInformation {
+  additionalNationality: String!
+  dateOfBirth: String!
+  dependencies: String!
+  familyName: String!
+  familyNameAr: String!
+  fatherName: String!
+  fatherNameAr: String!
+  firstName: String!
+  firstNameAr: String!
+  gender: String!
+  grandFatherName: String!
+  grandFatherNameAr: String!
+  maritalStatus: String!
+  nationalIdExpiry: String!
+  nationalIdNumber: String!
+  nationality: String!
+  passportExpiryDate: String!
+  passportIssueDate: String!
+  passportNo: String!
+  title: String!
+}
+
+input BasicInformationInput {
+  additionalNationality: String
+  dateOfBirth: String
+  dependencies: String
+  familyName: String
+  familyNameAr: String
+  fatherName: String
+  fatherNameAr: String
+  firstName: String
+  firstNameAr: String
+  gender: String
+  grandFatherName: String
+  grandFatherNameAr: String
+  maritalStatus: String
+  nationalIdExpiry: String
+  nationalIdNumber: String
+  nationality: String
+  passportExpiryDate: String
+  passportIssueDate: String
+  passportNo: String
+  title: String
+}
+
+type ContactInformation {
+  mobile: String!
+  personalEmail: String!
+}
+
+input ContactInformationInput {
+  mobile: String
+  personalEmail: String
+}
+
+type DeleteEmployeeResponse {
+  message: String
+  success: Boolean!
+}
+
+type Department {
+  addressDetails: AddressDetails!
+  bankInformation: BankInformation!
+  basicInformation: BasicInformation!
+  code: Float!
+  contactInformation: ContactInformation!
+  createdAt: String!
+  description: String!
+  drivingLicense: DrivingLicense!
+  emergencyContacts: EmergencyContacts!
+  employees: [Employee!]!
+  employeesNumber: Float!
+  id: ID!
+  localization: Localization!
+  location: String!
+  manager: String!
+  militaryStatus: MilitaryStatus!
+  name: String!
+  parentDepartment: ParentDepartment
+  status: Boolean!
+}
+
+type DrivingLicense {
+  expiryDate: String!
+  hasLicense: String!
+  type: String!
+}
+
+input DrivingLicenseInput {
+  expiryDate: String
+  hasLicense: String
+  type: String
+}
+
+type EmergencyContacts {
+  contactName: String!
+  phone: String!
+  relation: String!
+}
+
+input EmergencyContactsInput {
+  contactName: String
+  phone: String
+  relation: String
+}
+
+type Employee {
+  contact: String!
+  id: ID!
+  name: String!
+  role: String!
+}
+
+type Localization {
+  description: String!
+  name: String!
+}
+
+input LocalizationInput {
+  description: String!
+  name: String!
+}
+
+type MilitaryStatus {
+  document: String!
+  requireTravelPermit: String!
+  status: String!
+}
+
+input MilitaryStatusInput {
+  document: String
+  requireTravelPermit: String
+  status: String
+}
+
+type Mutation {
+  deleteEmployee(departmentId: ID!, employeeId: ID!): DeleteEmployeeResponse!
+  updateDepartment(id: ID!, input: UpdateDepartmentInput!): Department!
+}
+
+type ParentDepartment {
+  id: ID!
+  name: String!
+}
+
+type Query {
+  department(id: ID!): Department!
+  employees(departmentId: ID!): [Employee!]!
+}
+
+input UpdateDepartmentInput {
+  addressDetails: AddressDetailsInput
+  bankInformation: BankInformationInput
+  basicInformation: BasicInformationInput
+  contactInformation: ContactInformationInput
+  description: String
+  drivingLicense: DrivingLicenseInput
+  emergencyContacts: EmergencyContactsInput
+  localization: LocalizationInput
+  location: String
+  manager: String
+  militaryStatus: MilitaryStatusInput
+  name: String
+  status: Boolean
+}

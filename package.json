@@ -1,0 +1,20 @@
+{
+  "name": "department-management-system",
+  "version": "1.0.0",
+  "description": "Full-stack department management system with NestJS and React",
+  "scripts": {
+    "install:all": "cd backend && npm install && cd ../frontend && npm install",
+    "dev:backend": "cd backend && npm run start:dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "build:backend": "cd backend && npm run build",
+    "build:frontend": "cd frontend && npm run build"
+  },
+  "keywords": [
+    "nestjs",
+    "react",
+    "graphql",
+    "typescript"
+  ],
+  "author": "",
+  "license": "MIT"
+}

@@ -1,0 +1,20 @@
+query GetDepartment($id: ID!) {
+  department(id: $id) {
+    name
+    description
+    localization {
+      name
+      description
+    }
+    code
+    manager
+    location
+    employeesNumber
+    status
+    parentDepartment {
+      id
+      name
+    }
+    createdAt
+  }
+}

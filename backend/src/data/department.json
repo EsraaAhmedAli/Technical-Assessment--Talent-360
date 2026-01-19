@@ -1,0 +1,91 @@
+{
+	"department": {
+		"name": "finance department",
+		"description": "description",
+		"localization": {
+			"name": "الحسابات",
+			"description": "وصف"
+		},
+		"code": 11557,
+		"manager": "john smith",
+		"location": "HQ, london office",
+		"employeesNumber": 10,
+		"status": true,
+		"parentDepartment": null,
+		"createdAt": "2019-01-01T12:30:00.000Z",
+		"basicInformation": {
+			"nationalIdNumber": "29702031400693",
+			"nationalIdExpiry": "01 / 04 / 2025",
+			"title": "Mr.",
+			"firstName": "John",
+			"fatherName": "John",
+			"grandFatherName": "John",
+			"familyName": "Smith",
+			"firstNameAr": "جون",
+			"fatherNameAr": "جون",
+			"grandFatherNameAr": "جون",
+			"familyNameAr": "سميث",
+			"dateOfBirth": "01 / 04 / 1980",
+			"gender": "Male",
+			"nationality": "Egyptian",
+			"additionalNationality": "-",
+			"passportNo": "A135464",
+			"passportIssueDate": "01 / 04 / 1980",
+			"passportExpiryDate": "01 / 04 / 1980",
+			"maritalStatus": "Single",
+			"dependencies": "0"
+		},
+		"contactInformation": {
+			"personalEmail": "John.smith@gmail.com",
+			"mobile": "011223344556"
+		},
+		"emergencyContacts": {
+			"contactName": "John John",
+			"relation": "Father",
+			"phone": "011224477885"
+		},
+		"addressDetails": {
+			"country": "Egypt",
+			"city": "Cairo",
+			"postalCode": "11728",
+			"building": "7",
+			"street": "Street 127",
+			"floorNo": "7",
+			"apartment": "72"
+		},
+		"drivingLicense": {
+			"hasLicense": "Yes",
+			"type": "C1E",
+			"expiryDate": "01 / 04 / 2025"
+		},
+		"militaryStatus": {
+			"requireTravelPermit": "Yes",
+			"status": "Exempted",
+			"document": "filename1.docx"
+		},
+		"bankInformation": {
+			"bankName": "CIB",
+			"iban": "12346546413216446"
+		},
+		"employees": [
+			{
+				"id": 11557,
+				"name": "M. ElGandour",
+				"role": "Manager",
+				"contact": "+201712345678"
+			},
+			{
+				"id": 11555,
+				"name": "K. AbdElkader",
+				"role": "CTO",
+				"contact": "01712345678"
+			},
+			{
+				"id": 12365,
+				"name": "F. Rezk",
+				"role": "CEO",
+				"contact": "01712345678"
+			}
+		]
+	}
+}
