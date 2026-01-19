@@ -314,3 +314,14 @@ npm run lint
 ## License
 
 MIT
+
+<img width="1920" height="1946" alt="screencapture-localhost-5173-2026-01-19-12_15_26" src="https://github.com/user-attachments/assets/a659160a-9a1a-4eb6-a663-79c21322b92f" />
+<img width="1920" height="1946" alt="screencapture-localhost-5173-2026-01-19-12_15_47" src="https://github.com/user-attachments/assets/1e7cfc30-ec97-4ae7-b079-1bd9776db2a8" />
+<img width="1920" height="922" alt="screencapture-localhost-5173-2026-01-19-12_16_19" src="https://github.com/user-attachments/assets/2905cc27-a660-4261-bf2b-3313ae01b71d" />
+<img width="1920" height="922" alt="screencapture-localhost-5173-2026-01-19-12_16_30" src="https://github.com/user-attachments/assets/5718e0ea-5238-426e-9b9a-4fd2839f64a6" />
+
+
+
+
+
+
